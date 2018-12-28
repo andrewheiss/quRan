@@ -4,7 +4,7 @@
 
 This package contains the complete text of the Qur'an in Arabic (with and without vowels) and in English (the Yusuf Ali and Saheeh International translations).
 
-The text for each volume or translation was sourced from ASDF
+The text for each volume or translation was sourced from [Tanzil](http://tanzil.net/docs/download) and [Al Quran Cloud](https://alquran.cloud/).
 
 Each volume is in a data frame with a row for each ayah, along with 18 columns of detailed metadata (including ayah number, surah number, surah name in Arabic and English, juz', hizb, and so on), ready for text analysis. 
 
