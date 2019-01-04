@@ -1,6 +1,7 @@
 # quRan <img src="tools/logo.png" align="right"/>
 
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/quRan)](https://cran.r-project.org/package=quRan)
+[![DOI](https://zenodo.org/badge/163343504.svg)](https://zenodo.org/badge/latestdoi/163343504)
 
 ## An R package for the full text of the Qur'an
 
