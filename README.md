@@ -1,5 +1,7 @@
 # quRan <img src="tools/logo.png" align="right"/>
 
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/quRan)](https://cran.r-project.org/package=quRan)
+
 ## An R package for the full text of the Qur'an
 
 This package contains the complete text of the Qur'an in Arabic (with and without vowels) and in English (the Yusuf Ali and Saheeh International translations).
