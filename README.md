@@ -80,6 +80,38 @@ This project is released with a [Contributor Code of Conduct](CONDUCT.md). By pa
 
 ## Credits
 
-The text and translations are all open source or licensed under Creative Commons by [Tanzil](http://tanzil.net/docs/download) and [Al Quran Cloud](https://alquran.cloud/). Complete details are found in the [LICENSE](/LICENSE) file.
+The text and translations are all open source or licensed under Creative Commons by [Tanzil](http://tanzil.net/docs/download) and [Al Quran Cloud](https://alquran.cloud/). The licenses have been converted to MIT here, due to CRAN's policy that the entire package use the same license throughout.
+
+---
+
+Tanzil Quran License
+
+- This quran text is distributed under the terms of a Creative Commons
+  Attribution 3.0 License.
+
+- Permission is granted to copy and distribute verbatim copies of this text,
+  but CHANGING IT IS NOT ALLOWED.
+
+- This quran text can be used in any website or application, provided its source
+  (Tanzil.net) is clearly indicated, and a link is made to http://tanzil.net to
+  enable users to keep track of changes.
+
+- This copyright notice shall be included in all verbatim copies of the text,
+  and shall be reproduced appropriately in all files derived from or containing
+  substantial portion of this text.
+
+---
+
+Text taken from AlQuran.cloud and the Islamic Network is open source
+
+https://alquran.cloud/terms-and-conditions
+
+---
+
+Saheeh International Translation provided by the Qur'an Project with no rights reserved
+
+See https://archive.org/stream/QuranTranslationBySaheehInternational/Quran%20-%20Translation%20by%20Saheeh%20International_djvu.txt
+
+---
 
 Fatihah background in hex icon from [seeklogo](https://seeklogo.com/vector-logo/183552/sureh-fatiha). 

@@ -4,7 +4,6 @@
 \name{quRan}
 \alias{quRan}
 \alias{quRan-package}
-\alias{quRan-package}
 \title{The Qur'an}
 \description{
 This package contains the complete text of the Qur'an in Arabic (with and
