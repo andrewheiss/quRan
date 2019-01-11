@@ -3,6 +3,10 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/quRan)](https://cran.r-project.org/package=quRan)
 [![DOI](https://zenodo.org/badge/163343504.svg)](https://zenodo.org/badge/latestdoi/163343504)
 
+![Downloads](https://cranlogs.r-pkg.org/badges/quRan)
+![Downloads](https://cranlogs.r-pkg.org/badges/grand-total/quRan)
+[![lifecycle](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://www.tidyverse.org/lifecycle/#stable)
+
 ## An R package for the full text of the Qur'an
 
 This package contains the complete text of the Qur'an in Arabic (with and without vowels) and in English (the Yusuf Ali and Saheeh International translations).
@@ -23,7 +27,14 @@ Surah titles in Arabic, transliterated English, and translated English are all f
 
 ## Installation
 
-This package is not released on CRAN yet. You can install the development version from Github:
+To install the current stable version of the package, type the following:
+
+```r
+install.packages("quRan")
+library(quRan)
+```
+
+Alternatively, you can install the development version from Github:
 
 ```r
 library(remotes)
