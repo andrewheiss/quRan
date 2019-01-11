@@ -38,4 +38,15 @@ A dataset containing the Arabic text of the Qur'an, with vowels.
 Because Surahs 89 and 113 are both translated as "The Dawn," Surah 113 has
 been retitled "The Daybreak"
 }
+\examples{
+# See first few rows
+head(quran_ar)
+
+# How many ayahs are in each surah?
+library(dplyr)
+
+quran_ar \%>\%
+  group_by(surah_title_ar) \%>\%
+  summarize(total_ayaat = n())
+}
 \keyword{datasets}

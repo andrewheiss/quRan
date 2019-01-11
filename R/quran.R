@@ -37,6 +37,17 @@ NULL
 #'   \item{\code{sajda_recommended}}{Binary indicator for whether a sajdah is recommended}
 #'   \item{\code{sajda_obligatory}}{Binary indicator for whether a sajdah is obligatory}
 #' }
+#'
+#' @examples
+#' # See first few rows
+#' head(quran_ar)
+#'
+#' # How many ayahs are in each surah?
+#' library(dplyr)
+#'
+#' quran_ar %>%
+#'   group_by(surah_title_ar) %>%
+#'   summarize(total_ayaat = n())
 "quran_ar"
 
 #' The text of the Qur'an (Arabic, no vowels)
@@ -68,6 +79,17 @@ NULL
 #'   \item{\code{sajda_recommended}}{Binary indicator for whether a sajdah is recommended}
 #'   \item{\code{sajda_obligatory}}{Binary indicator for whether a sajdah is obligatory}
 #' }
+#'
+#' @examples
+#' # See first few rows
+#' head(quran_ar_min)
+#'
+#' # How many ayahs are in each surah?
+#' library(dplyr)
+#'
+#' quran_ar_min %>%
+#'   group_by(surah_title_ar) %>%
+#'   summarize(total_ayaat = n())
 "quran_ar_min"
 
 #' The Yusuf Ali translation of the Qur'an (English)
@@ -99,6 +121,17 @@ NULL
 #'   \item{\code{sajda_recommended}}{Binary indicator for whether a sajdah is recommended}
 #'   \item{\code{sajda_obligatory}}{Binary indicator for whether a sajdah is obligatory}
 #' }
+#'
+#' @examples
+#' # See first few rows
+#' head(quran_en_yusufali)
+#'
+#' # How many ayahs are in each surah?
+#' library(dplyr)
+#'
+#' quran_en_yusufali %>%
+#'   group_by(surah_title_en) %>%
+#'   summarize(total_ayaat = n())
 "quran_en_yusufali"
 
 #' The Saheeh International translation of the Qur'an (English)
@@ -130,4 +163,15 @@ NULL
 #'   \item{\code{sajda_recommended}}{Binary indicator for whether a sajdah is recommended}
 #'   \item{\code{sajda_obligatory}}{Binary indicator for whether a sajdah is obligatory}
 #' }
+#'
+#' @examples
+#' # See first few rows
+#' head(quran_en_sahih)
+#'
+#' # How many ayahs are in each surah?
+#' library(dplyr)
+#'
+#' quran_en_sahih %>%
+#'   group_by(surah_title_en) %>%
+#'   summarize(total_ayaat = n())
 "quran_en_sahih"

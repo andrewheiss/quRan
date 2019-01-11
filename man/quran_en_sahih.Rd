@@ -38,4 +38,15 @@ A dataset containing the English text of the Saheeh International translation of
 Because Surahs 89 and 113 are both translated as "The Dawn," Surah 113 has
 been retitled "The Daybreak"
 }
+\examples{
+# See first few rows
+head(quran_en_sahih)
+
+# How many ayahs are in each surah?
+library(dplyr)
+
+quran_en_sahih \%>\%
+  group_by(surah_title_en) \%>\%
+  summarize(total_ayaat = n())
+}
 \keyword{datasets}
