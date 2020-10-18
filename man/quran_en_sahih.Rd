@@ -4,7 +4,8 @@
 \name{quran_en_sahih}
 \alias{quran_en_sahih}
 \title{The Saheeh International translation of the Qur'an (English)}
-\format{A data frame with 6236 rows and 18 columns:
+\format{
+A data frame with 6236 rows and 18 columns:
 \describe{
   \item{\code{surah_id}}{Unique id number for the surah}
   \item{\code{ayah_id}}{Unique id number for the ayah}
@@ -24,7 +25,8 @@
   \item{\code{sajda_id}}{Unique id number for the sajdah}
   \item{\code{sajda_recommended}}{Binary indicator for whether a sajdah is recommended}
   \item{\code{sajda_obligatory}}{Binary indicator for whether a sajdah is obligatory}
-}}
+}
+}
 \source{
 Tanzil (\url{http://tanzil.net/docs/download}) and Al Quran Cloud (\url{https://alquran.cloud/})
 }
