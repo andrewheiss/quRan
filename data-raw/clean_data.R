@@ -2,6 +2,7 @@ library(dplyr)
 library(tidyr)
 library(stringr)
 library(purrr)
+library(readr)
 library(jsonlite)
 
 
@@ -28,7 +29,9 @@ download.file("http://api.alquran.cloud/quran/en.sahih",
 quran_en_sahih_raw <- read_json("./data-raw/en.sahih.json")
 
 
+download.file('https://bigdata-ir.com/wp-content/uploads/2018/07/ترجمه-فارسی-قرآن-آقای-قرائتی.txt','./data-raw/quran_farsi.txt')
 
+quran_fa_qaraati_raw <- read_delim('data-raw/quran_farsi.txt',delim = '|',col_names = c('surah_id' ,'ayah_id','text' ))
 # Load and clean raw data -------------------------------------------------
 
 # There are 15 sajdas, and each has additional metadata (like whether it is is
@@ -134,6 +137,9 @@ quran_en_sahih <- data_frame(surah_id = 1:114) %>%
   mutate_at(vars(surah_title_ar, surah_title_en, surah_title_en_trans),
             funs(forcats::fct_inorder))
 
+quran_fa_qaraati <- quran_fa_qaraati_raw%>%
+  filter(!is.na(surah_id)) %>%
+  bind_cols(quran_ar %>% select(-text,-surah_title_ar,-surah_id,-ayah_id))
 
 # Add to package ----------------------------------------------------------
 
@@ -141,3 +147,4 @@ devtools::use_data(quran_ar, overwrite = TRUE)
 devtools::use_data(quran_ar_min, overwrite = TRUE)
 devtools::use_data(quran_en_yusufali, overwrite = TRUE)
 devtools::use_data(quran_en_sahih, overwrite = TRUE)
+devtools::use_data(quran_fa_qaraati, overwrite = TRUE)
