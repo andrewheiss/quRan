@@ -175,3 +175,46 @@ NULL
 #'   group_by(surah_title_en) %>%
 #'   summarize(total_ayaat = n())
 "quran_en_sahih"
+
+
+
+#' The text of the Qur'an (Translated into Persian,)
+#'
+#' A dataset containing the Persian Translation of the Qur'an by Qaraati.
+#'
+#' @source bigdata-ir (\url{https://bigdata-ir.com})
+#' @format A data frame with 6236 rows and 17 columns:
+#' \describe{
+#'   \item{\code{surah_id}}{Unique id number for the surah}
+#'   \item{\code{ayah_id}}{Unique id number for the ayah}
+#'   \item{\code{text}}{Ayah text in Persian}
+#'   \item{\code{surah_title_ar}}{Name of the surah (Arabic)}
+#'   \item{\code{surah_title_en}}{Name of the surah (English; transliterated)}
+#'   \item{\code{surah_title_en_trans}}{Name of the surah (English; translated)}
+#'   \item{\code{revelation_type}}{Type of the surah (Meccan or Medinan)}
+#'   \item{\code{surah}}{Surah}
+#'   \item{\code{ayah}}{Ayah}
+#'   \item{\code{ayah_title}}{Combined surah and ayah (e.g. 2:242)}
+#'   \item{\code{juz}}{Juz'}
+#'   \item{\code{manzil}}{Manzil}
+#'   \item{\code{page}}{Page number}
+#'   \item{\code{hizb_quarter}}{Maqra}
+#'   \item{\code{sajda}}{Binary indicator for presence of a sajdah}
+#'   \item{\code{sajda_id}}{Unique id number for the sajdah}
+#'   \item{\code{sajda_recommended}}{Binary indicator for whether a sajdah is recommended}
+#'   \item{\code{sajda_obligatory}}{Binary indicator for whether a sajdah is obligatory}
+#' }
+#'
+#' @examples
+#' # See first few rows
+#' head(quran_fa_qaraati)
+#'
+#' # How many ayahs are in each surah?
+#' library(dplyr)
+#'
+#' quran_fa_qaraati %>%
+#'   group_by(surah_title_en) %>%
+#'   summarize(total_ayaat = n())
+"quran_fa_qaraati"
+
+
