@@ -21,6 +21,7 @@ The package contains:
 - `quran_ar_min`: The Qur'an in Arabic (without vowels)
 - `quran_en_yusufali`: The Yusuf Ali English translation of the Qur'an
 - `quran_en_sahih`: The Saheeh International English translation of the Qur'an
+- `quran_fa_qaraati`: A Persian(Farsi) translation of the Qur'an by Qaraati.
 
 Surah titles in Arabic, transliterated English, and translated English are all factors to preserve the correct order.
 
